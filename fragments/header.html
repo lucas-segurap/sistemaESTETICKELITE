@@ -1,22 +1,204 @@
 <header>
-    <div class="header-container">
-        <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <div class="col-md-3 mb-2 mb-md-0"> <a href="/"
-                    class="d-inline-flex link-body-emphasis text-decoration-none">
-                    <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg> </a> </div>
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/index.html" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="/paginas/cadastro.html" class="nav-link px-2">Cadastro</a></li>
-                <li><a href="/paginas/agendamento.html" class="nav-link px-2">Agendamento</a></li>
-                <li><a href="/paginas/faleconosco.html" class="nav-link px-2">Contato</a></li>
+    <style>
+        .header-estetick {
+            background: #5e4141;
+            border-bottom: 1px solid #2b2b2b;
+            width: 100%;
+        }
 
-            </ul>
-            <div class="col-md-3 text-end"> <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                <button type="button" class="btn btn-primary">Sign-up</button>
+        .header-estetick .header-container {
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        /* LOGO */
+        .header-estetick .logo-estetick {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .header-estetick .logo-estetick img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+
+        .header-estetick .logo-estetick span {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .header-estetick .logo-estetick span span {
+            color: #d4af37;
+        }
+
+        /* MENU */
+        .header-estetick .nav-estetick {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .header-estetick .nav-estetick a {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            color: #dddddd;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .header-estetick .nav-estetick a:hover {
+            color: #d4af37;
+        }
+
+        .header-estetick .nav-estetick a.active {
+            color: #d4af37;
+        }
+
+        .header-estetick .nav-estetick a::after {
+            content: "";
+            position: absolute;
+            left: 15px;
+            right: 15px;
+            bottom: 3px;
+            height: 2px;
+            background: #d4af37;
+            transform: scaleX(0);
+            transition: 0.3s;
+        }
+
+        .header-estetick .nav-estetick a:hover::after,
+        .header-estetick .nav-estetick a.active::after {
+            transform: scaleX(1);
+        }
+
+        /* BOTÕES */
+        .header-estetick .botoes-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-estetick .botoes-header a {
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .header-estetick .btn-cadastrar {
+            color: #d4af37;
+            border: 1px solid #d4af37;
+        }
+
+        .header-estetick .btn-cadastrar:hover {
+            background: #d4af37;
+            color: #080808;
+        }
+
+        .header-estetick .btn-agendar {
+            background: #d4af37;
+            color: #080808;
+            border: 1px solid #d4af37;
+        }
+
+        .header-estetick .btn-agendar:hover {
+            background: white;
+            border-color: white;
+        }
+
+        /* CELULAR */
+        @media (max-width: 900px) {
+            .header-estetick .header-container {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+
+            .header-estetick .nav-estetick {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .header-estetick .botoes-header {
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <div class="container header-estetick">
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <a href="/index.html" class="logo-estetick">
+                <img src="/favicon_io/android-chrome-512x512.png"
+                     alt="Logo EstetickElite">
+
+                <span>
+                    Estetick<span>Elite</span>
+                </span>
+            </a>
+
+            <!-- MENU -->
+            <nav>
+                <ul class="nav-estetick">
+
+                    <li>
+                        <a href="/index.html" class="active">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/paginas/cadastro.html">
+                            Cadastro
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/paginas/agendamento.html">
+                            Agendamento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/paginas/faleconosco.html">
+                            Fale conosco
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- BOTÕES -->
+            <div class="botoes-header">
+
+                <a href="/paginas/cadastro.html"
+                   class="btn-cadastrar">
+                    Cadastrar
+                </a>
+
+                <a href="/paginas/agendamento.html"
+                   class="btn-agendar">
+                    Agendar
+                </a>
+
             </div>
+
         </div>
     </div>
 </header>

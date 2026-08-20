@@ -22,6 +22,154 @@
     <div class="container">
         <div id="header-container"></div>
     </div>
+    ```html
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description"
+            content="Cadastre-se na EstetickElite e tenha seus dados organizados para facilitar seus agendamentos.">
+
+        <meta name="keywords" content="EstetickElite, cadastro, estética automotiva">
+
+        <meta name="author" content="Lucas Segura">
+
+        <title>Cadastro | EstetickElite</title>
+
+        <link rel="icon" href="/favicon_io/android-chrome-192x192.png" type="image/x-icon">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            body {
+                background-color: #080808;
+                color: white;
+            }
+
+            .cadastro {
+                max-width: 700px;
+                margin: 60px auto;
+                background-color: #111111;
+                padding: 40px;
+                border-radius: 12px;
+                border: 1px solid #292929;
+            }
+
+            .cadastro h1 {
+                color: #d4af37;
+                font-weight: bold;
+            }
+
+            .form-label {
+                color: #dddddd;
+            }
+
+            .form-control {
+                background-color: #1c1c1c;
+                border: 1px solid #333333;
+                color: white;
+            }
+
+            .form-control:focus {
+                background-color: #1c1c1c;
+                color: white;
+                border-color: #d4af37;
+                box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.15);
+            }
+
+            .btn-estetick {
+                background-color: #d4af37;
+                border-color: #d4af37;
+                color: #080808;
+                font-weight: bold;
+            }
+
+            .btn-estetick:hover {
+                background-color: white;
+                border-color: white;
+                color: #080808;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div id="header-container"></div>
+        </div>
+
+        <main class="container">
+
+            <div class="cadastro">
+
+                <div class="text-center mb-4">
+
+                    <h1>Cadastro</h1>
+
+                    <p style="color: #cccccc;">
+                        Cadastre seus dados para facilitar seus próximos agendamentos.
+                    </p>
+
+                </div>
+
+                <form>
+
+                    <div class="mb-3">
+                        <label class="form-label">Nome completo</label>
+
+                        <input type="text" class="form-control" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">E-mail</label>
+
+                        <input type="email" class="form-control" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Telefone</label>
+
+                        <input type="tel" class="form-control" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">CPF</label>
+
+                        <input type="text" class="form-control" placeholder="Digite seu CPF" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Senha</label>
+
+                        <input type="password" class="form-control" placeholder="Crie uma senha" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-estetick w-100">
+                        Criar cadastro
+                    </button>
+
+                </form>
+
+            </div>
+
+        </main>
+
+        <div id="footer-container"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        </script>
+
+        <script src="/js/script.js"></script>
+
+    </body>
+
+    </html>
+    ```
 
 
 

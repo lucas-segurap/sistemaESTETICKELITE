@@ -10,167 +10,504 @@
         content="Página com conteúdos, exercícios e atividades desenvolvidas durante as aulas de Bootstrap, aprendendo a criar páginas web modernas, organizadas e responsivas.">
     <meta name="keywords" content="sites,web desenvolvimento backend">
     <meta name="author" content="Lucas segura, SeguraPrime, seguralucas949@gmail.com, 11 97387-4201">
+
     <title>Estetickelite</title>
+
     <link rel="icon" href="/favicon_io/android-chrome-192x192.png" type="image/x-icon">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-        <style>
-            .servicos img{
-                max-width: 100%;
-                height: 200px;
-                object-fit: cover;
-            }
-            .servicos .card-text{
-                height: 180px;
-                overflow-y: scroll;
-                overflow-x: hidden;
-                white-space: normal;
-            }
-            .imagemelite{
-                max-width: 1200px;
-                height: auto;
-                align-items: center;
-            }
-            .container-img{
-                text-align: center;
-                color: black;
-            }
-            body{
-                background-color: rgb(231, 221, 221);
-            }
-        </style>
+    <style>
+        body {
+            background-color: #080808;
+            color: white;
+        }
+
+        .container-img {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .container-img h1 {
+            color: #d4af37;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .container-img p {
+            max-width: 1000px;
+            margin: auto;
+            line-height: 1.8;
+            color: #d6d6d6;
+        }
+
+        .imagemelite {
+            max-width: 1200px;
+            width: 100%;
+            height: auto;
+            margin-top: 35px;
+            border-radius: 10px;
+        }
+
+        .servicos {
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+
+        .servicos .card {
+            width: 100% !important;
+            height: 100%;
+            background-color: #111111;
+            border: 1px solid #292929;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .servicos .card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        .servicos img {
+            max-width: 100%;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .servicos .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .servicos .card-title {
+            color: #d4af37;
+            font-weight: bold;
+            min-height: 50px;
+        }
+
+        .servicos .card-text {
+            height: 180px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            white-space: normal;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+
+        .servicos .btn-primary {
+            background-color: #d4af37;
+            border-color: #d4af37;
+            color: #080808;
+            font-weight: bold;
+        }
+
+        .servicos .btn-primary:hover {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            color: #080808;
+        }
+    </style>
 
 </head>
 
-<body class=" text-light">
-
+<body>
 
     <div class="container">
         <div id="header-container"></div>
     </div>
-    
-
-
 
     <div class="container-img">
+
         <div class="card-body">
-            <h1 class="card-title" text-align="center">Bem Vindo à Estetickelite!!!</h1>
+
+            <h1 class="card-title">
+                Bem Vindo à Estetickelite!!!
+            </h1>
+
             <p class="card-text">
                 A EstetickElite é uma empresa de estética automotiva criada com o objetivo de oferecer cuidados de
                 qualidade para veículos, unindo limpeza, conservação e atenção aos detalhes.
+
                 Nosso propósito é proporcionar aos clientes uma experiência diferenciada, deixando cada veículo mais
                 limpo, bem cuidado e com uma aparência renovada. Trabalhamos com serviços pensados para atender
                 diferentes necessidades, desde uma limpeza mais simples até cuidados mais completos.
+
                 Além da qualidade nos serviços, a EstetickElite busca oferecer praticidade e facilidade para o cliente,
                 permitindo realizar cadastros, consultar serviços, conhecer os pacotes disponíveis e fazer agendamentos
                 de forma organizada.
+
                 Acreditamos que cuidar do carro vai além da aparência: é também uma forma de preservar o veículo e
                 valorizar aquilo que o cliente conquistou.
 
                 EstetickElite — cuidado, qualidade e atenção em cada detalhe.
             </p>
-            <img src="/img/imagemelite.png" class="card-img-top imagemelite" alt="..." >
+
+            <img src="/img/imagemelite.png" class="card-img-top imagemelite" alt="EstetickElite">
+
         </div>
+
+    </div>
+
+
+    <div class="container servicos">
+
+        <div class="row">
+
+            <div class="col-12 col-md-4 my-3">
+                <div class="card">
+                    <img src="img/1-1.webp" class="card-img-top" alt="Lavagem técnica">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Lavagem técnica</h5>
+
+                        <p class="card-text">
+                            A lavagem é essencial para cuidar da pintura do seu veículo. Nossa lavagem
+                            abrange todas as áreas, incluindo rodas e regiões de difícil acesso. Além disso,
+                            aplicamos uma proteção de manutenção para facilitar futuras lavagens e prolongar
+                            o intervalo entre elas.
+                        </p>
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            R$ 80,00
+                        </h4>
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 my-3">
+                <div class="card">
+
+                    <img src="img/2.webp" class="card-img-top" alt="Enceramento Wax">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Enceramento Wax</h5>
+
+                        <p class="card-text">
+                            Nossa Super Cera cria uma película de proteção sobre a lataria, vedando os
+                            micro poros da pintura. Como resultado, menos danos provocados pelos raios solares.
+                        </p>
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            R$ 250,00
+                        </h4>
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 my-3">
+                <div class="card">
+
+                    <img src="img/3-1.webp" class="card-img-top" alt="Revitalização de plásticos">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Revitalização de plásticos</h5>
+
+                        <p class="card-text">
+                            A revitalização de plásticos Box Detail traz vida e um visual mais atraente
+                            às peças que vão se desbotando ao longo do tempo, que ficam expostas ao sol e à chuva.
+                        </p>
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            R$ 480,00
+                        </h4>
+
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 my-3">
+                <div class="card">
+
+                    <img src="img/4.webp" class="card-img-top" alt="Polimento de Pintura">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Polimento de Pintura</h5>
+
+                        <p class="card-text">
+                            Carros com pinturas manchadas merecem o polimento de pintura. O processo
+                            também reaviva a cor e o brilho da lataria, além de eliminar riscos.
+                        </p>
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            R$ 700,00
+                        </h4>
+
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 my-3">
+                <div class="card">
+
+                    <img src="img/5.webp" class="card-img-top" alt="Revitalização de Plásticos Internos">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Revitalização de Plásticos Internos</h5>
+
+                        <p class="card-text">
+                            A revitalização de plásticos Box Detail traz vida e um visual mais atraente
+                            às peças que vão se desbotando ao longo do tempo.
+                        </p>
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            R$ 380,00
+                        </h4>
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 my-3">
+                <div class="card">
+
+                    <img src="img/6..png" class="card-img-top" alt="Vitrificação de Vidros">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Vitrificação de Vidros</h5>
+
+                        <p class="card-text">
+                            A limpeza e manutenção da Box Detail nos vidros evita a fixação de sujeiras
+                            pesadas e melhora a visibilidade. Diminui a necessidade de limpezas frequentes.
+                        </p>
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            R$ 600,00
+                        </h4>
+
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 my-3">
+                <div class="card">
+
+                    <img src="img/7.webp" class="card-img-top" alt="Descontaminação de Pintura">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Descontaminação de Pintura</h5>
+
+                        <p class="card-text">
+                            A descontaminação de pintura da Box Detail remove os contaminantes que
+                            deixam a pintura áspera, parecendo lixa.
+                        </p>
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            R$ 580,00
+                        </h4>
+
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 my-3">
+                <div class="card">
+
+                    <img src="img/8.webp" class="card-img-top" alt="Polimento de Faróis">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Polimento de Faróis</h5>
+
+                        <p class="card-text">
+                            O polimento remove respingos de asfalto, arranhões da superfície e
+                            opacidade, aumentando sua capacidade de iluminação.
+                        </p>
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            R$ 150,00
+                        </h4>
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 
 
-    <div class="container servicos">
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2 style="color: #d4af37; font-weight: bold;">
+                Combos EstetickElite
+            </h2>
+
+            <p style="color: #cccccc;">
+                Cuidados completos para deixar seu veículo sempre impecável.
+            </p>
+        </div>
+
         <div class="row">
 
-            <div class="col-12  col-md-4 my-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/1-1.webp" class="card-img-top" alt="..." class="w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Lavagem técnica</h5>
-                        <p class="card-text">A lavagem é essencial para cuidar da pintura do seu veículo. Nossa lavagem
-                            abrange todas as áreas, incluindo rodas e regiões de difícil acesso. Além disso, aplicamos
-                            uma
-                            proteção de manutenção para facilitar futuras lavagens e prolongar o intervalo entre elas.
+            <!-- COMBO START -->
+            <div class="col-12 col-md-4 my-3">
+                <div class="card h-100 text-center" style="background-color: #111111; border: 1px solid #292929;">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            Combo Start
+                        </h4>
+
+                        <p style="color: #cccccc;">
+                            Lavagem Técnica
+                            <br>
+                            +
+                            <br>
+                            Enceramento Wax
                         </p>
-                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
+
+                        <p style="color: #777777; text-decoration: line-through;">
+                            De R$ 330,00
+                        </p>
+
+                        <h3 style="color: white; font-weight: bold;">
+                            R$ 300,00
+                        </h3>
+
+                        <p style="color: #d4af37;">
+                            Economia de R$ 30,00
+                        </p>
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 mt-auto">
+                            Agendar
+                        </a>
+
                     </div>
                 </div>
             </div>
-            <div class="col-12  col-md-4 my-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/2.webp" class="card-img-top" alt="..." class="w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Enceramento Wax</h5>
-                        <p class="card-text">Nossa Super Cera cria uma película de proteção sobre a lataria, vedando os
-                            micro poros da pintura. Como resultado, menos danos provocados pelos raios solares.</p>
-                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
+
+
+            <!-- COMBO PREMIUM -->
+            <div class="col-12 col-md-4 my-3">
+                <div class="card h-100 text-center" style="background-color: #111111; border: 2px solid #d4af37;">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            Combo Premium
+                        </h4>
+
+                        <p style="color: #cccccc;">
+                            Lavagem Técnica
+                            <br>
+                            +
+                            <br>
+                            Revitalização de Plásticos
+                            <br>
+                            +
+                            <br>
+                            Vitrificação de Vidros
+                        </p>
+
+                        <p style="color: #777777; text-decoration: line-through;">
+                            De R$ 1.160,00
+                        </p>
+
+                        <h3 style="color: white; font-weight: bold;">
+                            R$ 750,00
+                        </h3>
+
+                        <p style="color: #d4af37;">
+                            Economia de R$ 410,00
+                        </p>
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 mt-auto">
+                            Agendar
+                        </a>
+
                     </div>
                 </div>
             </div>
-            <div class="col-12  col-md-4 my-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/3-1.webp" class="card-img-top" alt="..." class="w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Revitalização de plásticos</h5>
-                        <p class="card-text">A revitalização de plásticos Box Detail traz vida e um visual mais atraente
-                            as peças que vão se desbotando ao longo do tempo, que ficam expostas ao sol e a chuva.</p>
-                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
+
+
+            <!-- COMBO ELITE -->
+            <div class="col-12 col-md-4 my-3">
+                <div class="card h-100 text-center" style="background-color: #111111; border: 1px solid #292929;">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <h4 style="color: #d4af37; font-weight: bold;">
+                            Combo Elite
+                        </h4>
+
+                        <p style="color: #cccccc;">
+                            Lavagem Técnica
+                            <br>
+                            +
+                            <br>
+                            Enceramento Wax
+                            <br>
+                            +
+                            <br>
+                            Descontaminação de Pintura
+                            <br>
+                            +
+                            <br>
+                            Polimento de Pintura
+                        </p>
+
+                        <p style="color: #777777; text-decoration: line-through;">
+                            De R$ 1.610,00
+                        </p>
+
+                        <h3 style="color: white; font-weight: bold;">
+                            R$ 1.300,00
+                        </h3>
+
+                        <p style="color: #d4af37;">
+                            Economia de R$ 310,00
+                        </p>
+
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 mt-auto">
+                            Agendar
+                        </a>
+
                     </div>
                 </div>
             </div>
-            <div class="col-12  col-md-4 my-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/4.webp" class="card-img-top" alt="..." class="w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Polimento de Pintura</h5>
-                        <p class="card-text">Carros com pinturas manchadas merecem o polimento de pintura. O processo
-                            também reaviva a cor e o brilho da lataria, além de eliminar riscos.</p>
-                        <a href="/paginas/agendamento.html  " class="btn btn-primary w-100 ">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-md-4 my-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/5.webp" class="card-img-top" alt="..." class="w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Revitalização de Plásticos Internos</h5>
-                        <p class="card-text">A revitalização de plásticos Box Detail traz vida e um visual mais atraente
-                            as peças que vão se desbotando ao longo do tempo. </p>
-                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-md-4 my-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/6..png" class="card-img-top" alt="..." class="w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Vitrificação de Vidros</h5>
-                        <p class="card-text">A limpeza e manutenção da Box Detail nos vidros, evita a fixação de
-                            sujeiras pesadas e melhora a visibilidade. Diminui a necessidade de limpezas frequentes.</p>
-                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-md-4 my-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/7.webp" class="card-img-top" alt="..." class="w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Descontaminação de Pintura</h5>
-                        <p class="card-text">A descontaminação de pintura da Box Detail remove os contaminantes que
-                            deixam a pintura áspera, parecendo lixa,</p>
-                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12  col-md-4 my-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/8.webp" class="card-img-top" alt="..." class="w-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Polimento de Faróis</h5>
-                        <p class="card-text">O polimento remove respingos de asfalto, arranhões da superfície e
-                            opacidade, aumentando sua capacidade de iluminação.</p>
-                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
+    </div>
+    ```
+
+    </div>
+
+    </div>
     </div>
 
 
@@ -178,11 +515,14 @@
         <div id="footer-container"></div>
     </div>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
+
     <script src="/js/script.js"></script>
 
 </body>
 
 </html>
+```
