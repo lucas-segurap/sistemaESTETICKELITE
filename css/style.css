@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 85px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #050505;
+
+    border-bottom: 1px solid #252525;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #aaa;
+}
+
+.btn-header {
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+
+    padding: 12px 25px;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.95),
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.85)
+        ),
+        url("img/carro.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitulo {
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #aaa;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #aaa;
+}
+
+.hero-content > p {
+    color: #bbb;
+    line-height: 1.8;
+    max-width: 560px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn-primary,
+.btn-secondary,
+.btn-combo {
+    display: inline-block;
+
+    text-decoration: none;
+
+    padding: 15px 28px;
+
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #fff;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background: #ccc;
+}
+
+.btn-secondary {
+    border: 1px solid #777;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    padding: 100px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #888;
+
+    margin-bottom: 15px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    color: #888;
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.services {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.service-card {
+    padding: 35px 25px;
+
+    background: #111;
+
+    border: 1px solid #242424;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #666;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #888;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   COMBOS
+========================= */
+
+.combos-section {
+    padding: 100px 8%;
+
+    background: #050505;
+}
+
+.combos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.combo {
+    position: relative;
+
+    background: #111;
+
+    border: 1px solid #292929;
+
+    padding: 40px 30px;
+}
+
+.combo.destaque {
+    border: 1px solid #aaa;
+}
+
+.popular {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    padding: 8px 15px;
+
+    background: #fff;
+    color: #000;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.combo-type {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #888;
+
+    margin-bottom: 15px;
+}
+
+.combo h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.combo-description {
+    color: #888;
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.combo ul {
+    list-style: none;
+
+    line-height: 2.2;
+
+    color: #ccc;
+
+    margin-bottom: 30px;
+}
+
+.btn-combo {
+    width: 100%;
+
+    text-align: center;
+
+    border: 1px solid #555;
+
+    color: #fff;
+}
+
+.btn-combo:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.about {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #080808 20%,
+            rgba(8,8,8,0.75),
+            rgba(8,8,8,0.35)
+        ),
+        url("img/carro.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content > p:first-child {
+    color: #888;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-size: 48px;
+
+    margin-bottom: 25px;
+}
+
+.about h2 span {
+    color: #999;
+}
+
+.about-content p {
+    color: #aaa;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   AGENDAMENTO
+========================= */
+
+.appointment {
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background: #111;
+}
+
+.appointment > p {
+    color: #888;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.appointment h2 {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.appointment span {
+    display: block;
+
+    color: #888;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 70px 8% 30px;
+
+    background: #050505;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 2fr 1fr 1fr;
+
+    gap: 40px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #777;
+
+    line-height: 1.8;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #222;
+
+    color: #555;
+
+    text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .services {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .combos {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .hero {
+        min-height: 600px;
+        padding: 60px 7%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        text-align: center;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .about h2 {
+        font-size: 36px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
