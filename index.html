@@ -15,15 +15,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+        <style>
+            .servicos img{
+                max-width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+            .servicos .card-text{
+                height: 180px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                white-space: normal;
+            }
+            .imagemelite{
+                max-width: 1200px;
+                height: auto;
+                align-items: center;
+            }
+            .container-img{
+                text-align: center;
+                color: black;
+            }
+            body{
+                background-color: rgb(231, 221, 221);
+            }
+        </style>
+
 </head>
 
-<body>
+<body class=" text-light">
+
 
     <div class="container">
         <div id="header-container"></div>
     </div>
+    
 
-    <div class="container">
+
+
+    <div class="container-img">
+        <div class="card-body">
+            <h1 class="card-title" text-align="center">Bem Vindo à Estetickelite!!!</h1>
+            <p class="card-text">
+                A EstetickElite é uma empresa de estética automotiva criada com o objetivo de oferecer cuidados de
+                qualidade para veículos, unindo limpeza, conservação e atenção aos detalhes.
+                Nosso propósito é proporcionar aos clientes uma experiência diferenciada, deixando cada veículo mais
+                limpo, bem cuidado e com uma aparência renovada. Trabalhamos com serviços pensados para atender
+                diferentes necessidades, desde uma limpeza mais simples até cuidados mais completos.
+                Além da qualidade nos serviços, a EstetickElite busca oferecer praticidade e facilidade para o cliente,
+                permitindo realizar cadastros, consultar serviços, conhecer os pacotes disponíveis e fazer agendamentos
+                de forma organizada.
+                Acreditamos que cuidar do carro vai além da aparência: é também uma forma de preservar o veículo e
+                valorizar aquilo que o cliente conquistou.
+
+                EstetickElite — cuidado, qualidade e atenção em cada detalhe.
+            </p>
+            <img src="/img/imagemelite.png" class="card-img-top imagemelite" alt="..." >
+        </div>
+    </div>
+
+
+
+    <div class="container servicos">
         <div class="row">
 
             <div class="col-12  col-md-4 my-3">
@@ -36,7 +89,7 @@
                             uma
                             proteção de manutenção para facilitar futuras lavagens e prolongar o intervalo entre elas.
                         </p>
-                        <a href="#" class="btn btn-primary w-100 ">Saiba mais</a>
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -47,7 +100,7 @@
                         <h5 class="card-title">Enceramento Wax</h5>
                         <p class="card-text">Nossa Super Cera cria uma película de proteção sobre a lataria, vedando os
                             micro poros da pintura. Como resultado, menos danos provocados pelos raios solares.</p>
-                        <a href="#" class="btn btn-primary w-100 ">Saiba mais</a>
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -55,13 +108,10 @@
                 <div class="card" style="width: 18rem;">
                     <img src="img/3-1.webp" class="card-img-top" alt="..." class="w-100">
                     <div class="card-body">
-                        <h5 class="card-title">Proteção de Pintura</h5>
-                        <p class="card-text">Protegemos a pintura do seu veículo com produtos de alta qualidade,
-                            prolongando
-                            sua durabilidade e mantendo o brilho original. Nossa técnica de proteção é aplicada com
-                            precisão
-                            para garantir resultados excepcionais.</p>
-                        <a href="#" class="btn btn-primary w-100 ">Saiba mais</a>
+                        <h5 class="card-title">Revitalização de plásticos</h5>
+                        <p class="card-text">A revitalização de plásticos Box Detail traz vida e um visual mais atraente
+                            as peças que vão se desbotando ao longo do tempo, que ficam expostas ao sol e a chuva.</p>
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -69,12 +119,10 @@
                 <div class="card" style="width: 18rem;">
                     <img src="img/4.webp" class="card-img-top" alt="..." class="w-100">
                     <div class="card-body">
-                        <h5 class="card-title">Lavagem Completa</h5>
-                        <p class="card-text">Oferecemos uma lavagem completa para o seu veículo, garantindo que todas as
-                            áreas estejam impecáveis. Utilizamos produtos de alta qualidade e técnicas profissionais
-                            para um
-                            resultado excepcional.</p>
-                        <a href="#" class="btn btn-primary w-100 ">Saiba mais</a>
+                        <h5 class="card-title">Polimento de Pintura</h5>
+                        <p class="card-text">Carros com pinturas manchadas merecem o polimento de pintura. O processo
+                            também reaviva a cor e o brilho da lataria, além de eliminar riscos.</p>
+                        <a href="/paginas/agendamento.html  " class="btn btn-primary w-100 ">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -82,10 +130,10 @@
                 <div class="card" style="width: 18rem;">
                     <img src="img/5.webp" class="card-img-top" alt="..." class="w-100">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary w-100 ">Saiba mais</a>
+                        <h5 class="card-title">Revitalização de Plásticos Internos</h5>
+                        <p class="card-text">A revitalização de plásticos Box Detail traz vida e um visual mais atraente
+                            as peças que vão se desbotando ao longo do tempo. </p>
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -93,10 +141,10 @@
                 <div class="card" style="width: 18rem;">
                     <img src="img/6..png" class="card-img-top" alt="..." class="w-100">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary w-100 ">Saiba mais</a>
+                        <h5 class="card-title">Vitrificação de Vidros</h5>
+                        <p class="card-text">A limpeza e manutenção da Box Detail nos vidros, evita a fixação de
+                            sujeiras pesadas e melhora a visibilidade. Diminui a necessidade de limpezas frequentes.</p>
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -104,10 +152,10 @@
                 <div class="card" style="width: 18rem;">
                     <img src="img/7.webp" class="card-img-top" alt="..." class="w-100">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary w-100 ">Saiba mais</a>
+                        <h5 class="card-title">Descontaminação de Pintura</h5>
+                        <p class="card-text">A descontaminação de pintura da Box Detail remove os contaminantes que
+                            deixam a pintura áspera, parecendo lixa,</p>
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -115,10 +163,10 @@
                 <div class="card" style="width: 18rem;">
                     <img src="img/8.webp" class="card-img-top" alt="..." class="w-100">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary w-100 ">Saiba mais</a>
+                        <h5 class="card-title">Polimento de Faróis</h5>
+                        <p class="card-text">O polimento remove respingos de asfalto, arranhões da superfície e
+                            opacidade, aumentando sua capacidade de iluminação.</p>
+                        <a href="/paginas/agendamento.html" class="btn btn-primary w-100 ">Saiba mais</a>
                     </div>
                 </div>
             </div>
