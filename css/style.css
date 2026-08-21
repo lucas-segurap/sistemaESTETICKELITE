@@ -1,91 +1,222 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
 body {
-            background-color: #080808;
-            color: white;
-        }
+    background-color: #080808;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
 
-        .container-img {
-            text-align: center;
-            color: white;
-            padding: 40px 20px;
-        }
 
-        .container-img h1 {
-            color: #d4af37;
-            font-weight: bold;
-            margin-bottom: 25px;
-        }
+/* =========================
+   CONTAINER DA IMAGEM
+========================= */
 
-        .container-img p {
-            max-width: 1000px;
-            margin: auto;
-            line-height: 1.8;
-            color: #d6d6d6;
-        }
+.container-img {
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
 
-        .imagemelite {
-            max-width: 1200px;
-            width: 100%;
-            height: auto;
-            margin-top: 35px;
-            border-radius: 10px;
-        }
+.container-img h1 {
+    color: #d4af37;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
 
-        .servicos {
-            padding-top: 30px;
-            padding-bottom: 50px;
-        }
+.container-img p {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #d6d6d6;
+    font-size: 1rem;
+}
 
-        .servicos .card {
-            width: 100% !important;
-            height: 100%;
-            background-color: #111111;
-            border: 1px solid #292929;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: 0.3s;
-        }
 
-        .servicos .card:hover {
-            transform: translateY(-5px);
-            border-color: #d4af37;
-        }
+/* =========================
+   IMAGEM PRINCIPAL
+========================= */
 
-        .servicos img {
-            max-width: 100%;
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
+.imagemelite {
+    display: block;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 35px auto 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
-        .servicos .card-body {
-            display: flex;
-            flex-direction: column;
-        }
 
-        .servicos .card-title {
-            color: #d4af37;
-            font-weight: bold;
-            min-height: 50px;
-        }
+/* =========================
+   SEÇÃO DE SERVIÇOS
+========================= */
 
-        .servicos .card-text {
-            height: 180px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            white-space: normal;
-            color: #cccccc;
-            line-height: 1.6;
-        }
+.servicos {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
 
-        .servicos .btn-primary {
-            background-color: #d4af37;
-            border-color: #d4af37;
-            color: #080808;
-            font-weight: bold;
-        }
 
-        .servicos .btn-primary:hover {
-            background-color: #ffffff;
-            border-color: #ffffff;
-            color: #080808;
-        }
+/* =========================
+   CARDS
+========================= */
+
+.servicos .card {
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    border: 1px solid #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.servicos .card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+}
+
+
+/* =========================
+   IMAGENS DOS CARDS
+========================= */
+
+.servicos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   CORPO DO CARD
+========================= */
+
+.servicos .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.servicos .card-title {
+    color: #d4af37;
+    font-weight: bold;
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.servicos .card-text {
+    min-height: 100px;
+    height: auto;
+    overflow: visible;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.servicos .btn-primary {
+    background-color: #d4af37;
+    border: 1px solid #d4af37;
+    color: #080808;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.servicos .btn-primary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #080808;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .container-img {
+        padding: 30px 15px;
+    }
+
+    .container-img h1 {
+        font-size: 1.8rem;
+    }
+
+    .container-img p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .imagemelite {
+        width: 100%;
+        margin-top: 25px;
+        border-radius: 8px;
+    }
+
+    .servicos {
+        padding: 20px 10px 40px;
+    }
+
+    .servicos img {
+        height: 180px;
+    }
+
+    .servicos .card-body {
+        padding: 15px;
+    }
+
+    .servicos .card-title {
+        min-height: auto;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 480px) {
+
+    .container-img h1 {
+        font-size: 1.5rem;
+    }
+
+    .container-img p {
+        font-size: 0.9rem;
+    }
+
+    .servicos img {
+        height: 160px;
+    }
+
+    .servicos .card-title {
+        font-size: 1.1rem;
+    }
+
+    .servicos .card-text {
+        font-size: 0.9rem;
+    }
+}
