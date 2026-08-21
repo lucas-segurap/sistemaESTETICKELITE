@@ -1,0 +1,61 @@
+ body {
+            background-color: #080808;
+            color: white;
+        }
+
+        .contato {
+            max-width: 850px;
+            margin: 60px auto;
+        }
+
+        .contato h1 {
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .contato-card {
+            background-color: #111111;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            padding: 30px;
+            height: 100%;
+        }
+
+        .contato-card h4 {
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .contato-card p {
+            color: #cccccc;
+        }
+
+        .form-label {
+            color: #dddddd;
+        }
+
+        .form-control {
+            background-color: #1c1c1c;
+            border: 1px solid #333333;
+            color: white;
+        }
+
+        .form-control:focus {
+            background-color: #1c1c1c;
+            color: white;
+            border-color: #d4af37;
+            box-shadow: none;
+        }
+
+        .btn-estetick {
+            background-color: #d4af37;
+            border-color: #d4af37;
+            color: #080808;
+            font-weight: bold;
+        }
+
+        .btn-estetick:hover {
+            background-color: white;
+            border-color: white;
+            color: #080808;
+        }

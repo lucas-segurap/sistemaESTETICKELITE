@@ -1,0 +1,48 @@
+body {
+    background-color: #080808;
+    color: white;
+}
+
+.cadastro {
+    max-width: 700px;
+    margin: 60px auto;
+    background-color: #111111;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #292929;
+}
+
+.cadastro h1 {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.form-label {
+    color: #dddddd;
+}
+
+.form-control {
+    background-color: #1c1c1c;
+    border: 1px solid #333333;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #1c1c1c;
+    color: white;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.15);
+}
+
+.btn-estetick {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #080808;
+    font-weight: bold;
+}
+
+.btn-estetick:hover {
+    background-color: white;
+    border-color: white;
+    color: #080808;
+}
