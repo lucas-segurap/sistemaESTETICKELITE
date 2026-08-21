@@ -1,0 +1,365 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    width: 100%;
+    background: linear-gradient(
+        135deg,
+        #050505,
+        #111111,
+        #050505
+    );
+
+    border-bottom: 2px solid #d4af37;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.7);
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* detalhe dourado */
+
+header::after {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #d4af37,
+        #f5d76e,
+        #d4af37,
+        transparent
+    );
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    width: 100%;
+    min-height: 80vh;
+
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #252525 0%,
+            #111111 35%,
+            #080808 75%
+        );
+}
+
+
+/* =========================================
+   ÁREA DE AGENDAMENTO
+========================================= */
+
+.agendamento {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 45px;
+
+    background: linear-gradient(
+        145deg,
+        #171717,
+        #0d0d0d
+    );
+
+    border: 1px solid #333333;
+
+    border-top: 3px solid #d4af37;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.7),
+        0 0 30px rgba(212, 175, 55, 0.06);
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.agendamento h1 {
+    color: #d4af37;
+
+    font-size: 2.5rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+}
+
+
+.agendamento p {
+    color: #bdbdbd !important;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.agendamento .form-label {
+    color: #f5f5f5;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.agendamento .form-control,
+.agendamento .form-select {
+    background-color: #202020;
+
+    color: #ffffff;
+
+    border: 1px solid #3d3d3d;
+
+    border-radius: 8px;
+
+    padding: 12px 14px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Placeholder */
+
+.agendamento .form-control::placeholder {
+    color: #777777;
+}
+
+
+/* Foco */
+
+.agendamento .form-control:focus,
+.agendamento .form-select:focus {
+
+    background-color: #242424;
+
+    color: #ffffff;
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(212, 175, 55, 0.15);
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.agendamento .form-select {
+    color: #dddddd;
+}
+
+
+/* =========================================
+   DATA E HORÁRIO
+========================================= */
+
+input[type="date"],
+input[type="time"] {
+    color-scheme: dark;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.agendamento textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+.btn-estetick {
+
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #b9932e
+    );
+
+    color: #080808;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+}
+
+
+.btn-estetick:hover {
+
+    background: linear-gradient(
+        135deg,
+        #f1d267,
+        #d4af37
+    );
+
+    color: #000000;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(212, 175, 55, 0.25);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    width: 100%;
+
+    background: linear-gradient(
+        135deg,
+        #030303,
+        #111111,
+        #030303
+    );
+
+    color: #ffffff;
+
+    border-top: 2px solid #d4af37;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 -5px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Texto do footer */
+
+footer p {
+    color: #999999;
+
+    margin: 5px 0;
+}
+
+
+/* Títulos do footer */
+
+footer h3,
+footer h4 {
+    color: #d4af37;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 768px) {
+
+    main {
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .agendamento {
+
+        margin: 0 15px;
+
+        padding: 30px 20px;
+
+        border-radius: 14px;
+    }
+
+    .agendamento h1 {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .agendamento {
+
+        margin: 0 10px;
+
+        padding: 25px 15px;
+    }
+
+    .agendamento h1 {
+        font-size: 1.7rem;
+    }
+
+    .agendamento p {
+        font-size: 0.9rem;
+    }
+
+    .btn-estetick {
+        padding: 12px;
+    }
+
+}

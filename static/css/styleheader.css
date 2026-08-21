@@ -1,6 +1,4 @@
-<header>
-    <style>
-        .header-estetick {
+.header-estetick {
             background: #5e4141;
             border-bottom: 1px solid #2b2b2b;
             width: 100%;
@@ -138,67 +136,3 @@
                 justify-content: center;
             }
         }
-    </style>
-
-    <div class="container header-estetick">
-        <div class="header-container">
-
-            <!-- LOGO -->
-            <a href="/index.html" class="logo-estetick">
-                <img src="/favicon_io/android-chrome-512x512.png"
-                     alt="Logo EstetickElite">
-
-                <span>
-                    Estetick<span>Elite</span>
-                </span>
-            </a>
-
-            <!-- MENU -->
-            <nav>
-                <ul class="nav-estetick">
-
-                    <li>
-                        <a href="/index.html" class="active">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/paginas/cadastro.html">
-                            Cadastro
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/paginas/agendamento.html">
-                            Agendamento
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/paginas/faleconosco.html">
-                            Fale conosco
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-
-            <!-- BOTÕES -->
-            <div class="botoes-header">
-
-                <a href="/paginas/cadastro.html"
-                   class="btn-cadastrar">
-                    Cadastrar
-                </a>
-
-                <a href="/paginas/agendamento.html"
-                   class="btn-agendar">
-                    Agendar
-                </a>
-
-            </div>
-
-        </div>
-    </div>
-</header>
