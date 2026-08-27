@@ -1,6 +1,6 @@
  body {
-            background-color: #080808;
-            color: white;
+            background-color: #e9cfcf;
+            color: rgb(255, 255, 255);
         }
 
         .contato {
@@ -9,12 +9,12 @@
         }
 
         .contato h1 {
-            color: #d4af37;
+            color: #0f9dc9;
             font-weight: bold;
         }
 
         .contato-card {
-            background-color: #111111;
+            background-color: #000000;
             border: 1px solid #292929;
             border-radius: 12px;
             padding: 30px;
@@ -22,7 +22,7 @@
         }
 
         .contato-card h4 {
-            color: #d4af37;
+            color: #0ba6ff;
             font-weight: bold;
         }
 
@@ -43,13 +43,13 @@
         .form-control:focus {
             background-color: #1c1c1c;
             color: white;
-            border-color: #d4af37;
+            border-color: #1b4592;
             box-shadow: none;
         }
 
         .btn-estetick {
-            background-color: #d4af37;
-            border-color: #d4af37;
+            background-color: #4773b4;
+            border-color: #5ab1da;
             color: #080808;
             font-weight: bold;
         }
