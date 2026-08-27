@@ -188,43 +188,10 @@ main {
 
 
 /* =====================================================
-   IMAGEM PRINCIPAL
+   IMAGEM PRINCIPAL - CARRO INTEIRO
 ===================================================== */
 
-.imagemelite {
-    display: block;
 
-    width: 100%;
-
-    max-width: 1000px;
-
-    height: 450px;
-
-    margin: 0 auto;
-
-    object-fit: cover;
-
-    border-radius: 15px;
-
-    border:
-        1px solid
-        #333333;
-
-    box-shadow:
-        0 10px 35px
-        rgba(0, 0, 0, 0.6);
-
-    transition:
-        transform 0.4s ease,
-        border-color 0.4s ease;
-}
-
-
-.imagemelite:hover {
-    transform: scale(1.01);
-
-    border-color: var(--dourado);
-}
 
 
 /* =====================================================
