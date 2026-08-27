@@ -267,10 +267,52 @@ main .text-center p {
 
 
 /* =====================================================
+   CARDS DOS SERVIÇOS
+===================================================== */
+
+.card {
+    width: 100%;
+
+    height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            145deg,
+            #181818,
+            #0d0d0d
+        ) !important;
+
+    color: var(--branco);
+
+    border:
+        1px solid
+        #292929 !important;
+
+    border-radius: 15px !important;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.45);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =====================================================
    HOVER DOS CARDS
 ===================================================== */
 
 .card:hover {
+
     transform: translateY(-8px);
 
     border-color:
@@ -290,11 +332,14 @@ main .text-center p {
 ===================================================== */
 
 .card-img-top {
+
     display: block;
 
     width: 100%;
 
     height: 220px;
+
+    min-height: 220px;
 
     object-fit: cover;
 
@@ -306,6 +351,7 @@ main .text-center p {
 
 
 .card:hover .card-img-top {
+
     transform: scale(1.04);
 }
 
@@ -315,6 +361,7 @@ main .text-center p {
 ===================================================== */
 
 .card-body {
+
     padding: 25px;
 
     display: flex;
@@ -322,6 +369,8 @@ main .text-center p {
     flex-direction: column;
 
     flex: 1;
+
+    min-height: 0;
 }
 
 
@@ -330,7 +379,9 @@ main .text-center p {
 ===================================================== */
 
 .card-title {
-    color: var(--dourado) !important;
+
+    color:
+        var(--dourado) !important;
 
     font-size: 1.2rem;
 
@@ -339,6 +390,10 @@ main .text-center p {
     margin-bottom: 15px;
 
     min-height: 58px;
+
+    display: flex;
+
+    align-items: flex-start;
 }
 
 
@@ -347,13 +402,17 @@ main .text-center p {
 ===================================================== */
 
 .card-text {
-    color: var(--cinza-texto) !important;
+
+    color:
+        var(--cinza-texto) !important;
 
     line-height: 1.6;
 
     font-size: 0.95rem;
 
-    flex-grow: 1;
+    flex: 1;
+
+    margin-bottom: 10px;
 }
 
 
@@ -362,26 +421,36 @@ main .text-center p {
 ===================================================== */
 
 .card h4 {
-    color: var(--dourado) !important;
+
+    color:
+        var(--dourado) !important;
 
     font-weight: bold;
 
-    margin-top: 15px;
+    margin-top: auto;
 
     margin-bottom: 20px;
 }
 
 
 /* =====================================================
-   BOTÕES
+   BOTÃO
 ===================================================== */
 
 .card .btn {
+
     margin-top: auto;
+
+    width: 100%;
 }
 
 
+/* =====================================================
+   BOTÃO PRINCIPAL
+===================================================== */
+
 .btn-primary {
+
     background:
         linear-gradient(
             135deg,
@@ -389,13 +458,16 @@ main .text-center p {
             #b89428
         ) !important;
 
-    border: none !important;
+    border:
+        none !important;
 
-    color: #080808 !important;
+    color:
+        #080808 !important;
 
     font-weight: bold;
 
-    padding: 11px 20px;
+    padding:
+        11px 20px;
 
     border-radius: 8px;
 
@@ -405,6 +477,7 @@ main .text-center p {
 
 
 .btn-primary:hover {
+
     background:
         linear-gradient(
             135deg,
@@ -412,15 +485,67 @@ main .text-center p {
             var(--dourado)
         ) !important;
 
-    color: #000000 !important;
+    color:
+        #000000 !important;
 
-    transform: translateY(-2px);
+    transform:
+        translateY(-2px);
 
     box-shadow:
         0 7px 20px
         rgba(212, 175, 55, 0.25);
 }
 
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .card {
+
+        height: 500px;
+
+    }
+
+
+    .card-img-top {
+
+        height: 210px;
+
+        min-height: 210px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .card {
+
+        height: 480px;
+
+    }
+
+
+    .card-img-top {
+
+        height: 200px;
+
+        min-height: 200px;
+
+    }
+
+
+    .card-body {
+
+        padding: 20px;
+
+    }
+
+}
 
 /* =====================================================
    COMBOS
