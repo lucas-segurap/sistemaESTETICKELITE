@@ -5,7 +5,7 @@
 ===================================================== */
 
 :root {
-    --preto: #080808;
+    --preto: #000000;
     --preto-secundario: #111111;
     --preto-card: #161616;
 
@@ -366,6 +366,7 @@ main .text-center p {
 
     display: flex;
 
+    
     flex-direction: column;
 
     flex: 1;
@@ -413,6 +414,7 @@ main .text-center p {
     flex: 1;
 
     margin-bottom: 10px;
+    max-width: 320px;
 }
 
 
